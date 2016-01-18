@@ -174,4 +174,24 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "Che1-L04-user 4.4.4 GRJ90 C900B130 release-keys");
         property_set("ro.build.fingerprint", "Honor/Che1-L04/Che1:4.4.4/Che1-L04/C900B130:user/ota-rel-keys,release-keys");
     }
+    /* Y635-L01 */
+    else if (strstr(model, "Y635-L01") != NULL) {
+	property_set("ro.product.model", "Y635-L01");
+	property_set("ro.product.name", "Y635-L01");
+	property_set("ro.product.device", "Y635-L01");
+	property_set("ro.build.product", "hwY635");
+	property_set("ro.telephony.default_network", "9");
+	property_set("ro.build.description", "Y635-L01-user 4.4.4 GRJ90 C900B130 release-keys");
+	property_set("ro.build.fingerprint", "Huawei/Y635-L01/hwY635:4.4.4/HuaweiY635-L01/C900B130:user/ota-rel-keys,release-keys");
+    }
+    /* Y635-L03 */
+    else if (strstr(model, "Y635-L03") != NULL) {
+	property_set("ro.product.model", "Y635-L03");
+	property_set("ro.product.name", "Y635-L03");
+	property_set("ro.product.device", "Y635-L03");
+	property_set("ro.build.product", "hwY635");
+	property_set("ro.telephony.default_network", "9");
+	property_set("ro.build.description", "Y635-L03-user 4.4.4 GRJ90 C69B003 release-keys");
+	property_set("ro.build.fingerprint", "Huawei/Y635-L03/hwY635:4.4.4/HuaweiY635-L03/C69B003:user/ota-rel-keys,release-keys");
+    }
 }
