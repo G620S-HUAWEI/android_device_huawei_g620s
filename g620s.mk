@@ -202,7 +202,7 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     sensors.msm8916 \
-    libcalmodule_akm \
+    libcalmodule_common \
     calmodule.cfg
 
 # Ramdisk
